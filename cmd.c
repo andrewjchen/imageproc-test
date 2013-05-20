@@ -136,7 +136,7 @@ unsigned char cmdSetThrustOpenLoop(unsigned char type, unsigned char status, uns
 
     //DisableIntT1;	// since PID interrupt overwrites PWM values
 
-    tiHSetDC(1, thrust1);
+    tiHSetDC(3, thrust1);
     tiHSetDC(2, thrust2);
     //delay_ms(run_time_ms);
     //tiHSetDC(1,0);
